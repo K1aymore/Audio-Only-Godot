@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Zombie/Zombie Walk.ogg" type="AudioStream" id=1]
+[ext_resource path="res://Zombie/Zombie.gd" type="Script" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[node name="Zombie" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -10.0
+margin_top = -10.0
+margin_right = 10.0
+margin_bottom = 10.0
+color = Color( 0.862745, 0.247059, 0.247059, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Walk" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 1 )
+volume_db = 7.984
+autoplay = true
+max_distance = 3000.0
+attenuation = 7.20999
+bus = "World"

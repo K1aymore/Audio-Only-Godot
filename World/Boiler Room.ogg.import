@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Boiler Room.ogg-16811f3267f9b9198a066c5dbb9f07a2.oggstr"
+
+[deps]
+
+source_file="res://World/Boiler Room.ogg"
+dest_files=[ "res://.import/Boiler Room.ogg-16811f3267f9b9198a066c5dbb9f07a2.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
